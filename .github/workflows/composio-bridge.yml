@@ -1,0 +1,116 @@
+name: Composio Bridge
+
+# Bridge between Arena (whose sandbox network blocks *.composio.dev) and the
+# Composio MCP endpoint. Dispatch it from the Actions UI (default branch only),
+# or with the GitHub CLI once merged:
+#
+#   gh workflow run composio-bridge.yml -f mode=connectivity
+#   gh workflow run composio-bridge.yml -f mode=tools
+#   gh workflow run composio-bridge.yml -f mode=call \
+#     -f tool=LINKEDIN_CREATE_POST -f args='{"text":"Hello world!"}'
+#
+# Requires the repository secret COMPOSIO_CONSUMER_KEY
+# (Settings -> Secrets and variables -> Actions; value from dashboard.composio.dev).
+# SECURITY: the key is passed only through env vars (injection-safe), is never
+# echoed by any step, and GitHub masks it in all logs.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'connectivity = curl reachability probe | tools = list MCP tools | call = invoke a tool'
+        type: choice
+        required: true
+        default: connectivity
+        options:
+          - connectivity
+          - tools
+          - call
+      tool:
+        description: 'Tool slug for mode=call (e.g. LINKEDIN_CREATE_POST)'
+        type: string
+        required: false
+        default: ''
+      args:
+        description: 'JSON arguments for mode=call (e.g. {"text":"Hello!"})'
+        type: string
+        required: false
+        default: '{}'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: composio-bridge
+  cancel-in-progress: false
+
+jobs:
+  bridge:
+    name: bridge (${{ inputs.mode }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      MODE: ${{ inputs.mode }}
+      TOOL: ${{ inputs.tool }}
+      ARGS: ${{ inputs.args }}
+      COMPOSIO_CONSUMER_KEY: ${{ secrets.COMPOSIO_CONSUMER_KEY }}
+      COMPOSIO_MCP_URL: ${{ vars.COMPOSIO_MCP_URL || 'https://connect.composio.dev/mcp' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate configuration
+        run: |
+          {
+            echo "## Composio Bridge — mode: \`$MODE\`"
+            echo "- Endpoint: \`$COMPOSIO_MCP_URL\`"
+          } >> "$GITHUB_STEP_SUMMARY"
+          if [ -n "$COMPOSIO_CONSUMER_KEY" ]; then
+            echo "COMPOSIO_CONSUMER_KEY: present"
+          elif [ "$MODE" = "connectivity" ]; then
+            echo "::warning::COMPOSIO_CONSUMER_KEY is not set (not required for connectivity mode)."
+          else
+            echo "::error::COMPOSIO_CONSUMER_KEY secret is missing. Add it in repo Settings -> Secrets and variables -> Actions (value: your consumer key from dashboard.composio.dev). Never paste it in chat or commit it."
+            exit 3
+          fi
+
+      - name: Connectivity check (curl)
+        if: env.MODE == 'connectivity'
+        run: |
+          URL="$COMPOSIO_MCP_URL"
+          echo "Probing $URL from the GitHub runner..."
+          HOST=$(printf '%s' "$URL" | sed -E 's#^[a-zA-Z]+://([^/]+)/?.*#\1#')
+          getent hosts "$HOST" || echo "::warning::DNS lookup via getent returned nothing (curl will still try)."
+          GET_CODE=$(curl -sS -o /dev/null -w '%{http_code}' --max-time 30 "$URL") \
+            || { echo "::error::TLS/network failure reaching $URL (curl exit $?)"; exit 1; }
+          echo "GET  $URL -> HTTP $GET_CODE"
+          POST_CODE=$(curl -sS -o /dev/null -w '%{http_code}' --max-time 30 -X POST "$URL" \
+            -H 'Content-Type: application/json' \
+            -H 'Accept: application/json, text/event-stream' \
+            -d '{"jsonrpc":"2.0","id":0,"method":"initialize","params":{"protocolVersion":"2025-03-26","capabilities":{},"clientInfo":{"name":"connectivity-probe","version":"0.0.0"}}}') \
+            || { echo "::error::TLS/network failure on POST probe (curl exit $?)"; exit 1; }
+          echo "POST initialize (unauthenticated probe) -> HTTP $POST_CODE"
+          if [ "$GET_CODE" = "000" ] && [ "$POST_CODE" = "000" ]; then
+            echo "::error::Runner could NOT reach $URL (HTTP 000 = DNS/TLS/connection failure)."
+            exit 1
+          fi
+          echo "OK: runner reached $URL. Any non-000 status proves DNS+TLS+HTTP work; 4xx on a bare/unauthenticated probe is expected."
+          echo "- Connectivity: GET HTTP \`$GET_CODE\`, POST probe HTTP \`$POST_CODE\` ✅" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: List tools (MCP tools/list)
+        if: env.MODE == 'tools'
+        run: node scripts/composio/mcp-cli.mjs tools
+
+      - name: Call tool (MCP tools/call)
+        if: env.MODE == 'call'
+        run: |
+          if [ -z "$TOOL" ]; then
+            echo "::error::mode=call requires the 'tool' input (e.g. LINKEDIN_CREATE_POST)."
+            exit 2
+          fi
+          node scripts/composio/mcp-cli.mjs call "$TOOL" --args "$ARGS"
