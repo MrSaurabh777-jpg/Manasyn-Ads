@@ -6,7 +6,7 @@
 
 ---
 
-## 1. Session state (as of last commit `3cde7af`)
+## 1. Session state (as of last commit `2e82990`)
 
 | Item | Status |
 |---|---|
@@ -56,10 +56,18 @@ hash on load. The root `1001042846.png` is still tracked; leave it alone.
    ```
    (~2s, silent, harmless if cached.)
 
-2. **Sandbox resets can drop local commits.** This actually happened: a commit that had
-   been pushed came back missing locally, and the next commit landed as a *sibling* of it.
-   Always `git fetch origin arena/01a0a103-manasyn-ads` before `git push`, and if rejected,
-   **merge — never force-push.** Compare file content before deciding.
+2. **Sandbox resets roll back git history, but NOT the working tree.** This happened
+   **twice** — most recently after committing the handoff doc, when local HEAD snapped back
+   to `5e2aab1` and every commit made that session vanished from history. Critical detail:
+   **all files on disk survived** (images, PDF, scripts, docs). Only `.git` was rolled back.
+
+   So when a push is rejected with `non-fast-forward` or `fetch first`:
+   - Don't panic and don't re-generate anything — check `ls linkedin-week/day-0N/` first.
+   - `git fetch origin arena/01a0a103-manasyn-ads`
+   - Confirm the files are still on disk, then `git merge FETCH_HEAD` (non-destructive).
+   - **Never force-push.** Your missing work is almost certainly still in the working tree
+     and will be re-committed by the merge.
+   - The recovery commit for reference: `2e82990`.
 
 3. **Generated images do not come out at the requested size.** They arrive at
    **928×1152** (postA slides) and **1024×1024** (postB/postC). `scripts/normalise-size.py`
@@ -213,6 +221,8 @@ BODY: "..."
    - Regenerate any FAIL before moving on
 6. python3 scripts/build-carousel-pdf.py day-0N
 7. git add -A && commit && git fetch && (merge if needed) && push
+   A push rejection here is NORMAL — see gotcha #2. Fetch, merge, re-push.
+   Never force-push; your files are almost certainly still on disk.
 8. Present one asset to the user, and say plainly that you cannot see it
 ```
 
