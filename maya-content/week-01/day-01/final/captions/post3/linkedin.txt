@@ -1,5 +1,5 @@
 # Post 3 · LINKEDIN — 7:00 PM · professional English · post as PDF document carousel
-# Attach: post3/post3-carousel-linkedin.pdf (upload as a Document post)
+# Attach: post3/post3-carousel-linkedin.pdf (upload as a Document post (this is what makes it swipeable))
 # (lines starting with # are notes — do not paste them)
 
 Most psychology graduates can recite "Id, Ego, Superego." Far fewer can use the model — and that gap matters more than it seems.

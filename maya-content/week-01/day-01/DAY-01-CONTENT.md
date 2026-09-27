@@ -7,8 +7,8 @@
 **Week 1 themes:** Post 1 · AI Companion feature — Post 2 · Sleep & Mental Health — Post 3 · Freud's Psychoanalysis (Id, Ego, Superego + Defense Mechanisms)
 **Day 1 angle:** the "first hello" for each theme — the problem, the surprising fact, the foundation concept. Days 2–7 go deeper on the same three themes.
 
-> **Ready to post → `final/`** (see `final/POSTING-GUIDE.md`): finished images for every platform with text, logo, badge and
-> watermark already baked in, three YouTube Shorts, and copy-paste caption files per platform in `final/captions/`.
+> **Ready to post → `final/`** (open `final/POSTING-GUIDE.md`, the run-sheet): finished images for every platform with text, logo,
+> badge and watermark already baked in, plus copy-paste caption files per platform in `final/captions/`. YouTube is out of scope.
 > No Canva step is needed. This file remains the master copy (prompts, overlay specs, captions, sources); `images/` holds the
 > text-free bases the renderer starts from (`scripts/maya_render/day01.py`). Built from `MANASYN-DETAILS.md` (verified facts).
 
@@ -243,7 +243,7 @@ btw aap raat ko dimaag kaise shaant karte ho? 👇
 
 ---
 
-🎵 YOUTUBE SHORTS DESCRIPTION (10 s Short → `final/youtube/post1-ai-companion-short-1080x1920.mp4`, silent — add a calm track from the YouTube Audio Library):
+🎵 YOUTUBE SHORTS DESCRIPTION (YouTube is out of scope for Day 1 — kept for reference only, nothing to post):
 
 Title: Raat ke 1 baje kisse baat karein? | Manasyn AI Companion (Hindi + English)
 
@@ -539,7 +539,7 @@ aapka sabse bada neend-chor kya hai? 👇
 
 ---
 
-🎵 YOUTUBE SHORTS DESCRIPTION (14 s Short → `final/youtube/post2-sleep-anchors-short-1080x1920.mp4`, the 5 anchors appear one by one; silent — add music in YouTube):
+🎵 YOUTUBE SHORTS DESCRIPTION (YouTube is out of scope for Day 1 — kept for reference only, nothing to post):
 
 Title: Ek raat kam soye = dimaag 60% zyada reactive 🧠 | 5 Sleep Anchors | Manasyn Wellbeing Tip
 
@@ -645,6 +645,15 @@ Tags: sleep and mental health, neend aur mental health, sleep hygiene hindi, bet
 ♿ ALT TEXT:
 - Instagram (≤125 chars): "Dark academic carousel: Freud's iceberg, Id-Ego-Superego orbs and 8 defense mechanism shields — Manasyn Psych Notes."
 - Long (≤250 chars): "Eight-slide Manasyn Psych Notes carousel on Freud's psychoanalysis: an iceberg diagram of the unconscious, three coloured orbs for Id, Ego and Superego, an exam-night example, two shields showing 8 defense mechanisms, a mnemonic and sources."
+- Per slide (Instagram lets you set alt text on each carousel image; ≤125 chars each):
+  1. "Cover: Freud's Psychoanalysis — vintage study with notebook, spectacles and lamp. Manasyn Psych Notes, Week 1."
+  2. "Iceberg diagram: conscious tip, preconscious at the waterline, unconscious mass below — Freud's topographic model."
+  3. "Three glowing orbs labelled Id (pleasure principle), Ego (reality principle) and Superego (morality principle)."
+  4. "Exam-night desk with three speech bubbles: Id, Ego and Superego arguing about one more episode versus revision."
+  5. "Chalk shield with four defense mechanisms — repression, denial, projection, displacement — each with an example."
+  6. "Second shield: rationalisation, reaction formation, regression, sublimation — each with an everyday example."
+  7. "Mnemonic slide: I·E·S = Instinct, Executive, Standards; four boxes labelled DOWN, OUT, DRESS and BACK/UP."
+  8. "Manasyn logo with Save this for your exam, a link to free courses at manasyn.app/courses and the APA sources."
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 [C] CAROUSEL SLIDES — exact text + diagram spec
@@ -782,7 +791,7 @@ Share this with your study group 💜
 
 ---
 
-🐦 X CAPTION (7:00 PM · thread, 7 tweets · attach slides 2–7 as images):
+🐦 X CAPTION (7:00 PM · thread, 7 tweets · attach slides 1–7 as images, one per tweet):
 
 1/ Id, Ego, Superego: everyone memorises the names, nobody remembers what they do.
 
@@ -915,7 +924,7 @@ honest: aapka go-to defense mechanism kaunsa hai? mera rationalisation 🙈👇
 
 ---
 
-🎵 YOUTUBE SHORTS DESCRIPTION (53 s Short → `final/youtube/post3-freud-in-60s-short-1080x1920.mp4`, all 8 slides ~6.5 s each; silent — add a lo-fi track in YouTube):
+🎵 YOUTUBE SHORTS DESCRIPTION (YouTube is out of scope for Day 1 — kept for reference only, nothing to post):
 
 Title: Freud in 60 Seconds: Id, Ego, Superego + 8 Defense Mechanisms (with a mnemonic) | Manasyn Psych Notes
 

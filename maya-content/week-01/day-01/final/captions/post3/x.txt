@@ -1,5 +1,5 @@
-# Post 3 · X — 7:00 PM · thread, 7 tweets · attach slides 2–7 as images
-# Attach: Tweet 1: post3-slide-01.jpg · then slides 02–07 on tweets 2–7 as written in the thread
+# Post 3 · X — 7:00 PM · thread, 7 tweets · attach slides 1–7 as images, one per tweet
+# Attach: post3/post3-slide-01.jpg (tweet 1) | post3/post3-slide-02.jpg (tweet 2) | post3/post3-slide-03.jpg (tweet 3) | post3/post3-slide-04.jpg (tweet 4) | post3/post3-slide-05.jpg (tweet 5) | post3/post3-slide-06.jpg (tweet 6) | post3/post3-slide-07.jpg (tweet 7)
 # (lines starting with # are notes — do not paste them)
 
 1/ Id, Ego, Superego: everyone memorises the names, nobody remembers what they do.

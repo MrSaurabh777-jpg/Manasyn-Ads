@@ -1,5 +1,5 @@
 # Post 1 · REDDIT — optional for Post 1 — 2:00 PM slot if used · r/IndianPsychology, r/developersIndia, or r/india "AskIndia" · Flair: Discussion · **read each sub's self-promo rule first; don't link unless allowed**
-# Attach: (text post — no image unless the sub allows it)
+# Attach: text only
 # (lines starting with # are notes — do not paste them)
 
 Title: Built a mental-health check-in that works in Maithili and Bhojpuri, not just English/Hindi. Honest question — what would make you trust or distrust an AI like this?

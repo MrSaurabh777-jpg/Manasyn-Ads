@@ -59,26 +59,23 @@ def p1_portrait():  # 1080x1350: photo on top, caption plate below
     return img
 
 
-def p1_story(photo=True):  # 1080x1920; photo=False -> transparent overlay layer (for the video build)
-    if photo:
-        img = Image.new("RGBA", (1080, 1920), (*NAVY, 255))
-        img.alpha_composite(base("post1-spotlight-base.png"), (0, 300))
-    else:
-        img = Image.new("RGBA", (1080, 1920), (0, 0, 0, 0))
-        dd = ImageDraw.Draw(img)
-        dd.rectangle((0, 0, 1080, 300), fill=(*NAVY, 255)); dd.rectangle((0, 1380, 1080, 1920), fill=(*NAVY, 255))
-    gradient(img, 300, 420, NAVY, 255, 0)      # blend top edge
-    gradient(img, 1100, 1380, NAVY, 0, 255)    # blend bottom edge
+def p1_story():  # 1080x1920 — essentials kept inside IG's safe zone (y 200–1670)
+    img = Image.new("RGBA", (1080, 1920), (*NAVY, 255))
+    img.alpha_composite(base("post1-spotlight-base.png"), (0, 200))
+    gradient(img, 200, 300, NAVY, 255, 0)      # blend top edge
+    gradient(img, 980, 1280, NAVY, 0, 255)     # blend bottom edge
     d = ImageDraw.Draw(img)
-    place_logo(img, "card", 150, (40, 60))
-    pill(d, (1040, 92), "Manasyn Feature", inter(19, 600), TEAL, star=True)
-    d.text((540, 250), "MANASYN SPOTLIGHT", font=inter(20, 600), fill=TEAL_L, anchor="mm")
-    y = par(d, (60, 1300), P1_HEAD, poppins(74, "Bold"), WHITE, 960, 1.08)
+    d.text((540, 140), "MANASYN SPOTLIGHT", font=inter(20, 600), fill=TEAL_L, anchor="mm")
+    place_logo(img, "emblem", 80, (40, 232), card=True)
+    pill(d, (1040, 262), "Manasyn Feature", inter(19, 600), TEAL, star=True)
+    y = par(d, (60, 1180), P1_HEAD, poppins(74, "Bold"), WHITE, 960, 1.08)
     y = par(d, (60, y + 22), P1_SUB, inter(28, 400), LIGHT, 940, 1.3)
     y = par(d, (60, y + 8), P1_LANG, inter(24, 500), TEAL_L, 940, 1.3)
     y = par(d, (60, y + 24), P1_MICRO, inter(21, 600), GREEN, 940)
-    d.rounded_rectangle((60, 1720, 1020, 1800), radius=40, fill=TEAL)
-    d.text((540, 1760), "Tap the link  \u2192  manasyn.app", font=inter(26, 700), fill=WHITE, anchor="mm")
+    cy = max(y + 40, 1540)
+    d.rounded_rectangle((60, cy, 1020, cy + 80), radius=40, fill=TEAL)
+    d.text((540, cy + 40), "Tap the link  \u2192  manasyn.app", font=inter(26, 700), fill=WHITE, anchor="mm")
+    d.text((540, cy + 122), "Self-help & educational companion \u2014 not therapy, not a diagnosis, not an emergency service", font=inter(17, 400), fill=MUTED, anchor="mm")
     watermark(img, dark=True, size=18)
     return img
 
@@ -180,17 +177,19 @@ def p2_pin():
     return p2_layout(1000, 1500, 46, 23, 18, 20, kicker="5 SCIENCE-BACKED SLEEP HABITS FOR BETTER MENTAL HEALTH")
 
 
-def p2_story(show=5):
+def p2_story(show=5):  # 1080x1920 — infographic sits inside IG's safe zone
     img = Image.new("RGBA", (1080, 1920), (*MINT, 255))
-    inner = p2_layout(1080, 1500, 50, 25, 19, 21, footer=False, show=show)
-    img.alpha_composite(inner, (0, 210))
+    inner = p2_layout(1080, 1380, 48, 24, 18, 20, footer=False, show=show)
+    img.alpha_composite(inner, (0, 160))
     d = ImageDraw.Draw(img)
     bg = base("post2-wellbeing-base.png").getpixel((20, 20))[:3]
-    d.rectangle((0, 0, 1080, 210), fill=bg); d.rectangle((0, 1710, 1080, 1920), fill=bg)
-    d.text((540, 120), "WELLBEING WISDOM \u00b7 SLEEP", font=inter(22, 600), fill=TEAL, anchor="mm")
-    d.text((540, 1735), "Sleep anchors & wind-down reminders are built into Manasyn Daily Routine \u2014 free in beta", font=inter(18, 400), fill=TEXT2, anchor="mm")
-    d.rounded_rectangle((60, 1770, 1020, 1850), radius=40, fill=TEAL)
-    d.text((540, 1810), "Save \u00b7 Share with a friend  \u2192  manasyn.app", font=inter(26, 700), fill=WHITE, anchor="mm")
+    d.rectangle((0, 0, 1080, 160), fill=bg); d.rectangle((0, 1540, 1080, 1920), fill=bg)
+    d.text((540, 110), "WELLBEING WISDOM \u00b7 SLEEP", font=inter(22, 600), fill=TEAL, anchor="mm")
+    d.text((540, 1572), "Sleep anchors & wind-down reminders are built into Manasyn Daily Routine \u2014 free in beta", font=inter(18, 400), fill=TEXT2, anchor="mm")
+    d.rounded_rectangle((60, 1604, 1020, 1684), radius=40, fill=TEAL)
+    d.text((540, 1644), "Save \u00b7 Share with a friend  \u2192  manasyn.app", font=inter(26, 700), fill=WHITE, anchor="mm")
+    d.text((540, 1730), "General wellbeing information, not medical advice", font=inter(16, 400), fill=TEXT2, anchor="mm")
+    watermark(img, dark=False, size=16)
     return img
 
 
@@ -431,6 +430,23 @@ def p3_pin():
     return img
 
 
+def p3_story():  # 1080x1920 IG story pointing to the carousel in the feed
+    img = Image.new("RGBA", (1080, 1920), (*NAVY, 255))
+    d = ImageDraw.Draw(img)
+    d.text((540, 150), "NEW ON OUR FEED  \u00b7  PSYCH NOTES  \u00b7  WEEK 1", font=inter(20, 600), fill=TEAL_L, anchor="mm")
+    cover = s1().resize((1000, 1000), Image.LANCZOS)
+    img.alpha_composite(cover, (40, 200))
+    d = ImageDraw.Draw(img)
+    d.text((540, 1272), "Freud in 8 slides", font=poppins(46, "Bold"), fill=WHITE, anchor="mm")
+    par(d, (90, 1316), "Iceberg model \u00b7 Id, Ego, Superego with an exam-night example \u00b7 all 8 defense mechanisms \u00b7 a mnemonic that sticks", inter(24, 400), LIGHT, 900, 1.3, align="center")
+    d.text((540, 1450), "Save it for your exam  \u00b7  share with your study group", font=inter(23, 500), fill=TEAL_L, anchor="mm")
+    d.rounded_rectangle((60, 1510, 1020, 1590), radius=40, fill=PURPLE)
+    d.text((540, 1550), "Free crash courses + PDF notes  \u2192  manasyn.app/courses", font=inter(26, 700), fill=WHITE, anchor="mm")
+    d.text((540, 1636), "Educational content for psychology students \u2014 not clinical advice", font=inter(17, 400), fill=MUTED, anchor="mm")
+    watermark(img, dark=True, size=18)
+    return img
+
+
 # =====================================================================================
 def run(which="all"):
     jobs = {
@@ -439,7 +455,7 @@ def run(which="all"):
         "post2": [("post2/post2-square-1080x1080.jpg", p2_square), ("post2/post2-portrait-1080x1350.jpg", p2_portrait),
                   ("post2/post2-story-1080x1920.jpg", p2_story), ("post2/post2-pinterest-1000x1500.jpg", p2_pin)],
         "post3": [(f"post3/post3-slide-{i:02d}.jpg", fn) for i, fn in enumerate([s1, s2, s3, s4, s5, s6, s7, s8], 1)]
-                 + [("post3/post3-pinterest-1000x1500.jpg", p3_pin)],
+                 + [("post3/post3-pinterest-1000x1500.jpg", p3_pin), ("post3/post3-story-1080x1920.jpg", p3_story)],
     }
     keys = jobs.keys() if which == "all" else [which]
     for k in keys:
