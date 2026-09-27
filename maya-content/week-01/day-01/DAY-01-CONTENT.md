@@ -7,8 +7,10 @@
 **Week 1 themes:** Post 1 · AI Companion feature — Post 2 · Sleep & Mental Health — Post 3 · Freud's Psychoanalysis (Id, Ego, Superego + Defense Mechanisms)
 **Day 1 angle:** the "first hello" for each theme — the problem, the surprising fact, the foundation concept. Days 2–7 go deeper on the same three themes.
 
-> Built from `MANASYN-DETAILS.md` (verified product facts). Base images for all 3 posts are in `images/`
-> (text-free, ready for Canva overlays). Logo files: `brand/`. Everything below is copy-paste ready.
+> **Ready to post → `final/`** (see `final/POSTING-GUIDE.md`): finished images for every platform with text, logo, badge and
+> watermark already baked in, three YouTube Shorts, and copy-paste caption files per platform in `final/captions/`.
+> No Canva step is needed. This file remains the master copy (prompts, overlay specs, captions, sources); `images/` holds the
+> text-free bases the renderer starts from (`scripts/maya_render/day01.py`). Built from `MANASYN-DETAILS.md` (verified facts).
 
 ## 🗓️ Day 1 at a glance
 
@@ -19,11 +21,11 @@
 | 7:00 PM | **Post 3 — Psych Notes:** Freud's Id · Ego · Superego + 8 Defense Mechanisms (8-slide carousel) | IG 7:00 · X thread 7:00 · LinkedIn 7:00 · FB 7:30 · Pinterest 7:30 · Reddit 8:00 | Type C — share trigger (+ save) | `images/post3-psychnotes-slide-01…08.png` |
 
 ## ✅ Pre-publish checklist (every post)
-- [ ] Logo top-left (`brand/manasyn-logo-emblem-transparent.png`, 80 px) · badge top-right · `manasyn.app` watermark bottom-right
+- [x] Logo top-left · badge top-right · `manasyn.app` watermark bottom-right — **already baked into every file in `final/`**
 - [ ] Alt text pasted (IG ≤125 chars version; longer version for FB/LinkedIn/Pinterest)
 - [ ] Disclaimer line present on product post; crisis footer on Posts 1 & 2
 - [ ] Hashtags: IG → first comment; rotate Set A / B / C across days (Day 1 = Set A)
-- [ ] Handles checked: IG/Threads `@manasynapp`; X `@manasyn` (confirm)
+- [ ] Handles checked: IG/Threads `@manasynapp` · X `@Manasynapp` · YouTube `@Manasyn` · LinkedIn `linkedin.com/company/manasyn` · Facebook `facebook.com/people/Manasyn/61594022532492/`
 - [ ] Nothing says "therapy", "diagnosis", "cure", or "download the app"
 
 ---
@@ -241,18 +243,15 @@ btw aap raat ko dimaag kaise shaant karte ho? 👇
 
 ---
 
-🎵 YOUTUBE SHORTS DESCRIPTION (if you cut a 30–45 s Short from this post):
+🎵 YOUTUBE SHORTS DESCRIPTION (10 s Short → `final/youtube/post1-ai-companion-short-1080x1920.mp4`, silent — add a calm track from the YouTube Audio Library):
 
 Title: Raat ke 1 baje kisse baat karein? | Manasyn AI Companion (Hindi + English)
 
 Description:
-Raat ko dimaag band nahi hota aur kisi ko call karna ajeeb lagta hai? This Short shows what a Manasyn AI Companion check-in feels like — a guided conversation (not a chatbot) that asks the right next question in English, हिंदी, मैथिली or भोजपुरी, notices your mood, sleep and stress patterns, and gives you a short report you can share with your psychologist.
+Raat ko dimaag band nahi hota aur kisi ko call karna ajeeb lagta hai? Manasyn's AI Companion is a guided check-in — not a chatbot — that asks the right next question in English, हिंदी, मैथिली or भोजपुरी, notices your mood, sleep and stress patterns, and gives you a short report you can share with your psychologist.
 
-0:00 The 1 AM problem (raat ki bechaini)
-0:08 Guided check-in vs chatbot
-0:20 Apni bhasha mein — 4 languages + Hinglish
-0:30 Report for your psychologist
-0:38 Free in private beta → manasyn.app
+Free during private beta → manasyn.app
+Follow @Manasyn for daily mental-health and psychology Shorts · Instagram @manasynapp
 
 Manasyn is a self-help and educational companion — not therapy, not diagnosis, not an emergency service. India helplines: 112 · Tele-MANAS 14416 (24×7) · iCall 9152987821 (Mon–Sat, 10 AM–8 PM).
 
@@ -444,7 +443,7 @@ You don't adapt. You stop noticing.
 
 If sleep has been broken for 3+ weeks, see a doctor. India: Tele-MANAS 14416 · iCall 9152987821 (Mon–Sat 10–8) · Emergency 112
 
-Follow @manasyn for more 🧠 #MentalHealth #MindCare
+Follow @Manasynapp for more 🧠 #MentalHealth #MindCare
 
 ---
 
@@ -540,19 +539,19 @@ aapka sabse bada neend-chor kya hai? 👇
 
 ---
 
-🎵 YOUTUBE SHORTS DESCRIPTION (if you cut a 45–60 s Short):
+🎵 YOUTUBE SHORTS DESCRIPTION (14 s Short → `final/youtube/post2-sleep-anchors-short-1080x1920.mp4`, the 5 anchors appear one by one; silent — add music in YouTube):
 
 Title: Ek raat kam soye = dimaag 60% zyada reactive 🧠 | 5 Sleep Anchors | Manasyn Wellbeing Tip
 
 Description:
-Kal raat kam soye aur aaj har baat pe gussa? Is Short mein: why one night of poor sleep makes your brain's emotion centre over 60% more reactive (Yoo et al., 2007), why "main 5 ghante ka aadi hoon" is a myth (Van Dongen et al., 2003), and 5 science-backed sleep habits (neend sudharne ke 5 tarike) you can start tonight.
+Kal raat kam soye aur aaj har baat pe gussa? One night of poor sleep makes your brain's emotion centre over 60% more reactive (Yoo et al., 2007). Is Short mein 5 science-backed sleep anchors (neend sudharne ke 5 tarike) you can start tonight:
+1. 10 min subah ki roshni
+2. Uthne ka fixed time (Sunday bhi)
+3. Chai / coffee cutoff 3–4 PM (Drake et al., 2013)
+4. 20-minute rule — neend nahi aayi? utho, dim light, wapas jab aankhein bhaari hon
+5. Brain-dump list before bed (Scullin et al., 2018)
 
-0:00 Kam neend, zyada gussa — kyun?
-0:10 Amygdala vs prefrontal cortex
-0:20 "Adapt ho gaya" myth
-0:28 Anchor 1–2: subah ki roshni, uthne ka fixed time
-0:38 Anchor 3–5: chai cutoff, 20-minute rule, brain-dump list
-0:52 Save + share
+Pause the video to save the list 🔖
 
 Sleep anchors and wind-down reminders are built into Manasyn's Daily Routine — free during private beta → manasyn.app
 
@@ -810,7 +809,7 @@ A strong Ego negotiates. When it can't, the clash = anxiety.
 
 5/ Anxiety triggers the Ego's shields — defense mechanisms (Anna Freud, 1936):
 🔒 Repression — memory pushed out of awareness
-🙈 Denial — "I'm not stressed" (nails bitten to the skin)
+🙈 Denial — "I'm not stressed" (nails bitten raw)
 🪞 Projection — "I'm not jealous, THEY are"
 ↪ Displacement — boss yells → you snap at your sibling
 
@@ -824,7 +823,7 @@ A strong Ego negotiates. When it can't, the clash = anxiety.
 I·E·S = Instinct (Id), Executive (Ego), Standards (Superego)
 Defenses = DOWN (repress, deny) · OUT (project, displace) · DRESS (rationalise, react) · BACK/UP (regress, sublimate)
 
-Save for your exam. Follow @manasyn for more 🧠 #Psychology #PsychNotes
+Save for your exam. Follow @Manasynapp for more 🧠 #Psychology #PsychNotes
 
 ---
 
@@ -916,7 +915,7 @@ honest: aapka go-to defense mechanism kaunsa hai? mera rationalisation 🙈👇
 
 ---
 
-🎵 YOUTUBE SHORTS DESCRIPTION (animate slides 2–7 as a 60 s Short):
+🎵 YOUTUBE SHORTS DESCRIPTION (53 s Short → `final/youtube/post3-freud-in-60s-short-1080x1920.mp4`, all 8 slides ~6.5 s each; silent — add a lo-fi track in YouTube):
 
 Title: Freud in 60 Seconds: Id, Ego, Superego + 8 Defense Mechanisms (with a mnemonic) | Manasyn Psych Notes
 
@@ -925,13 +924,15 @@ Id, Ego, Superego yaad nahi rehte? This 60-second Psych Notes explainer covers F
 
 0:00 Why everyone mixes these up
 0:06 The iceberg (topographic model)
-0:16 Id, Ego, Superego
-0:28 Exam-night example
-0:36 8 defense mechanisms in 4 buckets
-0:52 Mnemonic + save
+0:13 Id, Ego, Superego
+0:19 Exam-night example
+0:26 Defense mechanisms 1–4 (push it DOWN / push it OUT)
+0:32 Defense mechanisms 5–8 (DRESS it up / go BACK or go UP)
+0:39 The mnemonic
+0:45 Save + sources
 
 Full Psychology 1st Semester crash course with free PDF notes → manasyn.app/courses
-Subscribe for daily Psych Notes in Hindi + English. Educational content, not clinical advice.
+Subscribe @Manasyn for daily Psych Notes in Hindi + English · Instagram @manasynapp. Educational content, not clinical advice.
 
 Tags: freud psychoanalysis, id ego superego, defense mechanisms, defense mechanisms examples, psychology notes, psychology class 12, freud theory hindi, freud in hindi, personality theories, psychoanalytic theory, ugc net psychology, ba psychology notes, psychology student, study with me psychology, psych notes, manasyn, manasyn psych notes, ncert psychology, psychology mnemonics, unconscious mind
 

@@ -1,0 +1,26 @@
+# Post 1 · LINKEDIN — 9:00 AM · professional English
+# Attach: post1/post1-portrait-1080x1350.jpg
+# (lines starting with # are notes — do not paste them)
+
+The hardest sentence in mental healthcare is the first one.
+
+In India, 84.5% of people with a diagnosable mental health condition receive no treatment at all (National Mental Health Survey 2015–16, NIMHANS). We usually frame that number as a supply problem — about 0.75 psychiatrists per 100,000 people, against a desirable three or more. It is that. But it is also a first-step problem: the distance between "something feels off" and "I said it out loud to someone" is where most people stop.
+
+Two research findings shaped how we built Manasyn's AI Companion.
+
+1. People disclose more when they believe they aren't being judged. In a controlled study, participants who thought they were talking to a fully automated virtual interviewer reported lower fear of self-disclosure and showed more openness than those who believed a human was operating it (Lucas et al., 2014).
+
+2. Emotion lives in the first language. Bilingual clients access emotional memories and describe feelings with more precision in their mother tongue (Santiago-Rivera & Altarriba, 2002). A check-in that only works in English quietly excludes most of India.
+
+So the Companion is not a chatbot that says "I understand." It is a structured intake woven into a natural conversation: it keeps asking the right next question until it actually has a picture of your mood, sleep, stress and any risk signals — in English, Hindi, Maithili, Bhojpuri or Hinglish. At the end you get a short, shareable report you can hand to a psychologist, so the first professional appointment doesn't start from zero.
+
+What it is not — and we say this inside the product, not just in the fine print: it is not therapy, not a diagnosis, and not a substitute for a psychologist or psychiatrist. It states its limits and points to human help when risk signals appear. We think that is the minimum standard for any AI touching mental health.
+
+Personally, this feature exists because of the 1 AM problem — the hour when everyone you could call is asleep and "I'll deal with it tomorrow" becomes a habit. A good first question, in your own language, at that hour, can change what tomorrow looks like.
+
+Manasyn is free during private beta.
+Visit manasyn.app | Building mental healthcare for India 💚
+
+If you work in mental health: what would you want an AI check-in to hand you before a first session — and what should it never attempt?
+
+#MentalHealthIndia #DigitalMentalHealth #AIinHealthcare #MentalHealthApp #Psychology #HealthTech #Manasyn

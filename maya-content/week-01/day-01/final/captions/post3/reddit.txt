@@ -1,0 +1,26 @@
+# Post 3 · REDDIT — 8:00 PM · r/psychologystudents, r/IndianPsychology, r/StudentNotes · Flair: Resource / Educational · gallery post with the slides · **check self-promo rules; keep the disclosure at the end**
+# Attach: post3/post3-slide-02.jpg … 07.jpg as a gallery (skip the cover + CTA slide) — check sub rules first
+# (lines starting with # are notes — do not paste them)
+
+Title: Made a one-page Freud cheat-sheet (Id/Ego/Superego + all 8 defense mechanisms with everyday examples + a mnemonic). Roast it or improve it?
+
+Body:
+Freud's structural model was the first topic that made me feel stupid in first year — I could recite the three names and still mixed them up under exam pressure. Rebuilt my notes from the primary sources plus NCERT/Baron & Misra, and this version finally stuck. Sharing in case it helps someone before semester exams.
+
+Topographic model (levels of mind): conscious (what you notice now), preconscious (retrievable), unconscious (pushed out of awareness, still influencing behaviour). Side note that surprised me: Freud never actually used the iceberg image — it entered the textbooks later, likely via G. Stanley Hall (Green, 2019, *History of Psychology*).
+
+Structural model: Id = pleasure principle, present from birth. Superego = morality principle, internalised from parents/society (conscience + ego-ideal). Ego = reality principle, mediates between the two and the outside world. When it can't, you get anxiety → defenses.
+
+8 classic defenses, grouped so they're memorable:
+- DOWN: Repression (memory pushed out of awareness) · Denial ("I'm not stressed" while chewing your nails off)
+- OUT: Projection ("I'm not jealous, they are") · Displacement (boss shouts → you snap at your sibling)
+- DRESS IT UP: Rationalisation ("that job was bad anyway") · Reaction formation (like someone → act cold to them)
+- BACK or UP: Regression (stress → childlike sulking) · Sublimation (anger → sport, art, work — the mature one)
+
+Mnemonic for the trio: I·E·S — Instinct / Executive / Standards.
+
+Criticism to include in answers: much of the model isn't falsifiable (Popper, 1963); however defenses remain an active research area — Vaillant (2000) ranks them from immature to mature with longitudinal outcome data, and Cramer (2015) reviews the measurement literature.
+
+Things I'm unsure about and would love correction on: whether "denial" should be listed as a separate defense or as a form of repression (textbooks disagree), and whether to teach "suppression" (conscious) next to repression (unconscious) since exams love that distinction.
+
+Disclosure: I made this with Manasyn — thoughts? It's a mental-health/psych-ed platform I work on; the slides are free to save and I'm not linking anything. Corrections welcome — I'd rather be accurate than pretty.

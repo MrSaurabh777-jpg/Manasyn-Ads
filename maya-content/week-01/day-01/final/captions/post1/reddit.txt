@@ -1,0 +1,19 @@
+# Post 1 · REDDIT — optional for Post 1 — 2:00 PM slot if used · r/IndianPsychology, r/developersIndia, or r/india "AskIndia" · Flair: Discussion · **read each sub's self-promo rule first; don't link unless allowed**
+# Attach: (text post — no image unless the sub allows it)
+# (lines starting with # are notes — do not paste them)
+
+Title: Built a mental-health check-in that works in Maithili and Bhojpuri, not just English/Hindi. Honest question — what would make you trust or distrust an AI like this?
+
+Body:
+Some context first. NMHS 2015–16 (NIMHANS) put India's treatment gap at 84.5% — most people who need care never get a first conversation, let alone a diagnosis. A part of that gap that doesn't get discussed enough is language: almost every mental-health tool I've seen assumes you can describe your feelings in English, or at best Hindi. If your inner voice runs in Maithili or Bhojpuri, you're translating yourself before you've even started.
+
+So we built a guided check-in that works in English, Hindi, Maithili and Bhojpuri (and plain Hinglish). It's deliberately not a free-form chatbot — it's a structured intake disguised as a normal conversation. It asks about mood, sleep, stress, and watches for risk signals, then produces a short report you can take to a real psychologist so the first appointment doesn't start from zero.
+
+Things we decided it must NOT do: call itself therapy, give a diagnosis, or pretend to be a substitute for a professional. It says its limits in the app and points to human help (Tele-MANAS 14416, iCall, 112) when risk shows up.
+
+What I'd genuinely like to hear from this community:
+- What would make you trust — or immediately distrust — something like this?
+- If you're a psychologist: what would you actually want in a pre-session report? What would be noise?
+- Which language gaps are we still missing? (We keep hearing Magahi and Angika.)
+
+Disclosure: I made this with Manasyn — thoughts? It's free during private beta; I'm not linking unless the mods are fine with it. Happy to answer anything, including the uncomfortable questions.

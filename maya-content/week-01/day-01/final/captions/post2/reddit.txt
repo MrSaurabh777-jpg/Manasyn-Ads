@@ -1,0 +1,25 @@
+# Post 2 · REDDIT — 2:00 PM · r/india or r/mentalhealth or r/IndianPsychology · Flair: Educational / Resource · **check sub rules; image post optional**
+# Attach: post2/post2-square-1080x1080.jpg (optional — text is the post)
+# (lines starting with # are notes — do not paste them)
+
+Title: One night of bad sleep makes your brain's emotion centre ~60% more reactive — five evidence-based sleep habits that actually work (with sources)
+
+Body:
+I went down a research rabbit hole after noticing I turn into a completely different, angrier person after a 4-hour night. Turns out there's a clean explanation.
+
+Why bad sleep = short fuse. In a brain-imaging study, a single night without sleep made the amygdala (emotion/threat centre) more than 60% more reactive to negative images, while its connection to the prefrontal cortex — the part that provides context and puts the brakes on — weakened (Yoo et al., 2007, Current Biology). Everything feels bigger and more personal because, neurologically, it is.
+
+It's a lever, not just a symptom. A 2021 meta-analysis of 65 RCTs found that improving sleep improved depression, anxiety, rumination and stress — with a dose-response relationship (Scott et al., 2021, Sleep Medicine Reviews).
+
+The "I've adapted" myth. People restricted to 6 hours/night for two weeks felt fine after a few days, but their performance kept dropping to the level of people kept awake for two full nights (Van Dongen et al., 2003, Sleep). You don't adapt; you stop noticing.
+
+Five things that hold up in studies (and cost nothing):
+1. ~10 minutes of outdoor light soon after waking.
+2. Fixed wake time, weekends included — the body clock is set by when you get up.
+3. Caffeine cutoff ~8 hours before bed. Even 6 hours before, it measurably fragments sleep (Drake et al., 2013). Yes, the 6 PM chai counts.
+4. Stimulus control: not asleep in ~20 minutes → get out of bed, dim light, boring task, return when drowsy. Bed = sleep only.
+5. Write tomorrow's to-do list before bed. In a polysomnography study, people who did this fell asleep ~9 minutes faster than those who journaled completed tasks (Scullin et al., 2018).
+
+Not medical advice — if sleep has been wrecked for 3+ weeks, see a doctor; insomnia has real treatments (CBT-I).
+
+Disclosure: I put this together for Manasyn, a mental-health app I work on — this post isn't about the app, just the notes. I made this with Manasyn — thoughts? Would love to hear what actually worked for people here, especially with Indian schedules (late dinners, night shifts, hostel life).

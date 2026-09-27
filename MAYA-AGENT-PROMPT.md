@@ -14,7 +14,7 @@
 | 2 | `#manasynsapp` | `#manasynapp` | IG handle is @manasynapp |
 | 3 | `#AITherapy`, "Voice Therapy Feature" | `#AICompanion`, "voice sessions" (+ disclaimer if quoting the product card "Live Voice Therapy") | Site: "Not therapy with a human professional" |
 | 4 | "Psychologist Connect" | "Share your report with your psychologist" + practitioner tools | No matching marketplace is claimed on the site |
-| 5 | `@manasyn` on all platforms | `@manasynapp` on IG/Threads; confirm X/LinkedIn/FB handles | Only IG handle is verified |
+| 5 | `@manasyn` on all platforms | IG/Threads `@manasynapp` · X `@Manasynapp` · YouTube `@Manasyn` · LinkedIn `/company/manasyn` · Facebook `/people/Manasyn/61594022532492/` | Handles confirmed by founder |
 | 6 | Reddit line "I made this with Manasyn — thoughts?" | Keep, but phrase as a disclosure at the end, never as a pitch | Reddit self-promo rules |
 | 7 | (missing) | Add crisis footer on any post touching distress; add short disclaimer on product posts | Site disclaimer + prior brand rules |
 | 8 | Palette teal/green/purple | ✅ Kept as the working palette for this system | Closer to the logo than the older LinkedIn palette |
@@ -243,7 +243,7 @@ Write SEPARATE captions for EACH platform:
 - Emojis: 2-3 maximum
 - Hashtags: 2-3 maximum (#MentalHealth #MindCare)
 - No fluff, only value
-- End thread with: "Follow @manasyn for more 🧠"
+- End thread with: "Follow @manasyn for more 🧠"   ← X handle = @Manasynapp
 
 💼 LINKEDIN:
 - Length: 300-500 words

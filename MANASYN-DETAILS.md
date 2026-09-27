@@ -21,7 +21,10 @@
 | Site H1 | "Online Counselling & Mental Health Support, Made for India" · "India's Complete Mental Health Ecosystem" |
 | Website | https://manasyn.app (start: /start · courses: /courses · privacy: /privacy · AI limits: /disclaimer) |
 | Instagram (verified in repo brief) | **@manasynapp** — Threads shares this handle by design. |
-| X / LinkedIn / Facebook handles | ⚠️ **Not verified.** MAYA brief uses `@manasyn` on X. Confirm before publishing; captions are written with `@manasynapp` (IG/Threads) and `@manasyn` (X) — swap if wrong. |
+| X (Twitter) | **@Manasynapp** — https://x.com/Manasynapp (confirmed by founder, 27 Sep 2026) |
+| LinkedIn | **Manasyn** company page — https://www.linkedin.com/company/manasyn/ |
+| Facebook | **Manasyn** page — https://www.facebook.com/people/Manasyn/61594022532492/ |
+| YouTube | **@Manasyn** — https://www.youtube.com/@Manasyn |
 | Operator | Saurabh Kumar, Gaya, Bihar, India · aura777ai@gmail.com |
 | Status | **Free during private beta.** Paid plans will be listed transparently before launch. |
 | Devices | Web app — modern browser on phone/tablet/computer. Voice needs internet + mic permission. (No app-store listing is claimed on the site — don't say "download from Play Store" unless that becomes true.) |
@@ -116,7 +119,9 @@ Brand don'ts: never "you're mentally ill" · no sad/crying faces as the main ima
 ## 5. Handles & links used in captions
 - Website CTA: `manasyn.app` (IG: "Link in bio | manasyn.app")
 - Courses: `manasyn.app/courses` · Start: `manasyn.app/start`
-- IG / Threads: `@manasynapp` · X: `@manasyn` (⚠️ confirm)
+- IG / Threads: `@manasynapp` · X: `@Manasynapp` · YouTube: `@Manasyn`
+- LinkedIn: `linkedin.com/company/manasyn` · Facebook: `facebook.com/people/Manasyn/61594022532492/`
+- Cross-platform sign-off lines: X threads end "Follow @Manasynapp for more 🧠"; YouTube descriptions link `youtube.com/@Manasyn`; LinkedIn/Facebook tag the page, never a personal profile
 
 ## 6. Verified numbers you may cite (nothing else)
 | Fact | Exact wording | Source |
@@ -141,5 +146,5 @@ Full APA references live inside each day's content file.
 | Base tag `#AITherapy`; "Voice Therapy Feature" | Avoid therapy claims → `#AICompanion`; "voice sessions" (product card name may be quoted with disclaimer). |
 | "Psychologist Connect feature" (Week 4) | Site offers a *practitioner side* (clinic management) + reports you can share with your own psychologist. No marketplace/matching is claimed — write Week 4 around "share your report with your psychologist" and the practitioner tools, not "book a psychologist". |
 | "Screening Tools" | PHQ-9 / GAD-7 **style** self-screens — say "educational, not diagnostic" every time. |
-| Handles `@manasyn` everywhere | IG/Threads = `@manasynapp`. Others unverified. |
+| Handles `@manasyn` everywhere | IG/Threads = `@manasynapp` · X = `@Manasynapp` · YouTube = `@Manasyn` · LinkedIn `/company/manasyn` · Facebook `/people/Manasyn/61594022532492/` (all confirmed). |
 | Post 1 visual: real people, Indian faces | ✅ Kept for this system (hopeful, never crying). Earlier LinkedIn series' "no faces" rule does not apply here. |

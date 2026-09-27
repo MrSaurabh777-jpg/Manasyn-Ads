@@ -1,0 +1,31 @@
+# Post 2 · LINKEDIN — optional 1:00 PM · professional English
+# Attach: post2/post2-portrait-1080x1350.jpg
+# (lines starting with # are notes — do not paste them)
+
+The cheapest productivity tool in your company is not a software licence. It's sleep — and most of us are underinvesting in it while calling it discipline.
+
+Here is what the research actually says.
+
+One night of sleep deprivation makes the amygdala — the brain's threat and emotion centre — over 60% more reactive to negative stimuli, while its connection to the prefrontal cortex, the region responsible for context and self-control, weakens (Yoo et al., 2007). In practical terms: the colleague who "overreacted" in the 9 AM meeting may simply have slept four hours.
+
+The effect is bidirectional. A 2021 meta-analysis of 65 randomised controlled trials found that improving sleep produced medium-sized improvements in depression, anxiety, rumination and stress — and the more sleep improved, the more mental health improved (Scott et al., 2021). Sleep is not downstream of mental health; it is one of its levers.
+
+The "I've adapted to five hours" belief doesn't survive contact with the lab. When participants were restricted to six hours a night for two weeks, their subjective sleepiness plateaued after a few days — but their cognitive performance kept declining, ending up comparable to people kept awake for two full nights (Van Dongen et al., 2003). We don't adapt. We lose the ability to notice.
+
+For adults, the consensus recommendation is seven or more hours per night (Watson et al., 2015).
+
+Five evidence-based anchors that cost nothing:
+1. Ten minutes of outdoor light within an hour of waking.
+2. A fixed wake time — including weekends. Circadian rhythm is set by when you get up, not when you lie down.
+3. Caffeine cutoff eight hours before bed; even six hours out, it measurably fragments sleep (Drake et al., 2013).
+4. Stimulus control: not asleep within ~20 minutes → leave the bed, dim light, return when drowsy.
+5. A five-minute to-do list before bed — writing tomorrow's tasks shortened sleep onset in a polysomnography study (Scullin et al., 2018).
+
+For leaders: the fastest wellbeing intervention you can run is not a webinar. It's protecting the last hour of your team's evening from "quick" messages.
+
+We built sleep anchors and wind-down reminders into Manasyn's Daily Routine for exactly this reason — small structure, no guilt-trip streaks. Free during private beta.
+Visit manasyn.app | Building mental healthcare for India 💚
+
+Which of the five would be hardest for you to keep for two weeks — and why?
+
+#SleepHealth #MentalHealthIndia #WorkplaceWellbeing #Productivity #Neuroscience #EmployeeWellbeing #Manasyn
