@@ -19,6 +19,8 @@ maya-content/
         post2/  square · portrait · story · pinterest
         post3/  slide-01…08 (1080²) · story · pinterest · post3-carousel-linkedin.pdf
         captions/post{1,2,3}/  instagram · facebook · x · linkedin · threads · pinterest · reddit · alt-text · references (.txt)
+      reel/                      ← Post 1 Reel kit (30 s, 9:16): REEL-BRIEF.md (tool + prompts + text + caption),
+        keyframes/shot-01…05     5 AI keyframes to animate in Kling / Hailuo, end card, cover
 ```
 Platforms covered: Instagram, Facebook, X, LinkedIn, Threads, Pinterest, Reddit. (YouTube is out of scope — the MAYA
 brief's Shorts descriptions stay in the day file for reference only.)
@@ -36,7 +38,7 @@ python3 scripts/maya_render/day01.py all    # images + LinkedIn PDF  → final/p
 python3 scripts/maya_render/pack.py         # captions + run-sheet + QA → final/captions, final/POSTING-GUIDE.md
 ```
 Fonts are vendored in `../brand/fonts/` (Poppins + Inter, OFL). Layout code lives in `scripts/maya_render/` (`lib.py` = drawing
-helpers, `day01.py` = Day 1 layouts). Days 2+ copy `day01.py` and change the text/positions.
+helpers, `day01.py` = Day 1 layouts, `reel.py` = Reel end card/cover, `pack.py` = captions + run-sheet). Days 2+ copy `day01.py` and change the text/positions.
 
 ## Manual fallback (Canva Free, ≈ 45 min)
 
